@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xsltcomponents.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:my="http://murb.nl/demo"
+>
+  <head>
+    <title></title>
+    <style>
+      body {
+        font-family: Helvetica, sans-serif;
+      }
+      .card h2::first-letter {
+        color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <my:card>
+      <header>
+        <my:h><em>This</em> is a card header</my:h>
+      </header>
+      <footer>
+        this is a test <em>footer</em>, don't you see
+      </footer>
+      <my:body>
+        <p>This is the <strong>body</strong> of the card</p>
+        <my:button onclick="alert('Yes?');">Push me.</my:button>
+      </my:body>
+    </my:card>
+  </body>
+</html>
